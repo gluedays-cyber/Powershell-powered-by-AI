@@ -1,0 +1,14 @@
+# Binaries
+*.exe
+*.exe~
+pi.exe
+pi.exe~
+
+# Local Runtime Data
+metrics.json
+session.json
+log.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db
