@@ -81,19 +81,13 @@ go build -o pi.exe
 
 ---
 
-## 배포 및 크로스 플랫폼 빌드
+## 배포 및 빌드
 
-Go의 타겟 플랫폼 빌드 변수를 지정하여 운영체제별 바이너리를 생성한다.
+본 프로젝트는 Windows API 및 PowerShell 환경에 강하게 종속되어 있으므로 **Windows 운영체제 전용**으로 빌드해야 한다. 타 OS(Linux, macOS) 대상의 크로스 컴파일은 지원하지 않는다.
 
 ```powershell
-# Windows
+# Windows (amd64)
 $env:GOOS="windows"; $env:GOARCH="amd64"; go build -o dist/pi-windows-amd64.exe
-
-# Linux
-$env:GOOS="linux"; $env:GOARCH="amd64"; go build -o dist/pi-linux-amd64
-
-# macOS
-$env:GOOS="darwin"; $env:GOARCH="amd64"; go build -o dist/pi-darwin-amd64
 ```
 
 ---
