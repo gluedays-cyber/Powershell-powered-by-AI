@@ -83,12 +83,7 @@ go build -o pi.exe
 
 ## 배포 및 빌드
 
-본 프로젝트는 Windows API 및 PowerShell 환경에 강하게 종속되어 있으므로 **Windows 운영체제 전용**으로 빌드해야 한다. 타 OS(Linux, macOS) 대상의 크로스 컴파일은 지원하지 않는다.
-
-```powershell
-# Windows (amd64)
-$env:GOOS="windows"; $env:GOARCH="amd64"; go build -o dist/pi-windows-amd64.exe
-```
+본 프로젝트는 Windows API 및 PowerShell 환경에 강하게 종속되어 있으므로 **Windows 운영체제 전용**으로 빌드해야 한다.
 
 ---
 
